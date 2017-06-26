@@ -90,7 +90,7 @@ function occurence ($array, $letter) {
 
 function addInput ($int, $sortie,$arrayType, $arrayName){
     for ($i = 0; $i < $int; $i++){
-        $sortie .= "<input type='$arrayType[$i]' name='$arrayName[$i]'>";;
+        $sortie .= "<input type='$arrayType[$i]' class='form-control' name='$arrayName[$i]'>";;
     }
     return $sortie;
 }
