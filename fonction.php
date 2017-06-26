@@ -82,4 +82,16 @@ function occurence ($array, $letter) {
     $LetterAskii = ord($letter);
     return $count_char[$LetterAskii];
 }
+
+
+/*
+        GENERATION DE FORMULAIRE HTML
+*/
+
+function addInput ($int, $sortie,$arrayType, $arrayName){
+    for ($i = 0; $i < $int; $i++){
+        $sortie .= "<input type='$arrayType[$i]' name='$arrayName[$i]'>";;
+    }
+    return $sortie;
+}
 ?>
